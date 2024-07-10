@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Store</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <meta name="description" content="Game Over Sidte" />
+    <meta name="keywords" content="Game Over , موقع العاب" />
+    <meta name="author" content="ASHOUR ALI" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="mainBg overflow-auto">
+    <span class="position-fixed bottom-0 end-0 m-3 z-3">
+      <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+   </span>
+    <header class="position-relative">
+      <nav
+        id="navbar-example"
+        class="navbar navbar-expand-lg fixed-top end-0 start-0  container rounded-4 "
+      >       
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <img src="img/logo-sm.png" class="col-2" />
+            <h1 class="navbar-brand fw-bold ms-1 ">GAME REVIEWS</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars "></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item fs-6">
+                <button class="nav-link active" id="show-offer">OFFERS</button>
+              </li>
+              <li class="nav-item fs-6">
+                <button class="nav-link" id="show-status">STATUS</button>
+              </li>
+              <li class="nav-item fs-6">
+                <button class="nav-link" id="show-survey">SURVEY</button>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="offer" class="offer py-5 my-5">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-3 col-md-6 game-card ">
+            <a href="#" class="game" data-game="game-details-1">
+              <div class="card mainBg border ">
+                <div class="p-3">
+                  <img src="img/thumbnail1.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="card-title ">
+                        Lorem ipsum dolor sit.
+                      </h5>
+                      <div class=" sale px-2 rounded-3 ">
+                        Free
+                      </div>
+                    </div>
+                    <p class="card-text  description">
+                      Lorem ipsum dolor sit amet consectetur ectetur?
+                    </p>
+                    <span id="gameId" class="d-none">1</span>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center border-top border-top-2 rate py-2 px-3"
+                >
+                  <h6 class="rating  rounded-2 m-0 ">offer</h6>
+                  <h6 class="rating  rounded-2 m-0 ">
+                    Desktop App
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 game-card ">
+            <a href="#" class="game" data-game="game-details-2">
+              <div class="card mainBg border ">
+                <div class="p-3">
+                  <img src="img/thumbnail2.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="card-title ">
+                        Lorem ipsum dolor sit.
+                      </h5>
+                      <div class="sale px-2 rounded-3 ">
+                        Free
+                      </div>
+                    </div>
+                    <p class="card-text  description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eveniet reprehenderit dolore consectetur?
+                    </p>
+                    <span id="gameId" class="d-none">2</span>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center border-top border-top-2 rate py-2 px-3"
+                >
+                  <h6 class="rating  rounded-2 m-0 ">Offer</h6>
+                  <h6 class="rating  rounded-2 m-0 ">
+                    Desktop App
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- كرر نفس الكود في باقي الكاردات مع تغيير الفئات حسب الحاجة -->
+        </div>
+      </div>
+    </section>
+    <section id="status" class="status d-none  my-5 py-5">
+      <div class="container">
+        <h2 class="">Status </h2>
+        <div class="table-responsive">
+          <table class="table ">
+            <thead class=" color-text">
+              <tr>
+                <th scope="col">Offer Name</th>
+                <th scope="col">Points</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr>
+                <td>Offer 1</td>
+                <td>100</td>
+                <td>Click</td>
+              </tr>
+              <tr>
+                <td>Offer 2</td>
+                <td>200</td>
+                <td>Complete</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+        
+
+          <!-- كرر نفس الكود في باقي الكاردات مع تغيير الفئات حسب الحاجة -->
+        </div>
+      </div>
+    </section>
+    <section id="survey" class="survey d-none my-5 py-5">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-3 col-md-6 game-card ">
+            <a href="#" class="game" data-game="game-details-3">
+              <div class="card mainBg border ">
+                <div class="p-3">
+                  <img src="img/thumbnail3.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="card-title ">
+                        Lorem ipsum dolor sit.
+                      </h5>
+                      <div class="sale px-2 rounded-3 ">
+                        Free
+                      </div>
+                    </div>
+                    <p class="card-text  description">
+                      Lorem ipsum dolor sit amet consectetur ectetur?
+                    </p>
+                    <span id="gameId" class="d-none">1</span>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center border-top border-top-2 rate py-2 px-3"
+                >
+                  <h6 class="rating  rounded-2 m-0 ">survey</h6>
+                  <h6 class="rating  rounded-2 m-0 ">
+                    Desktop App
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 game-card ">
+            <a href="#" class="game" data-game="game-details-4">
+              <div class="card mainBg border ">
+                <div class="p-3">
+                  <img src="img/thumbnail4.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="card-title ">
+                        Lorem ipsum dolor sit.
+                      </h5>
+                      <div class="sale px-2 rounded-3 ">
+                        Free
+                      </div>
+                    </div>
+                    <p class="card-text  description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eveniet reprehenderit dolore consectetur?
+                    </p>
+                    <span id="gameId" class="d-none">2</span>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center border-top border-top-2 rate py-2 px-3"
+                >
+                  <h6 class="rating  rounded-2 m-0 ">survey</h6>
+                  <h6 class="rating  rounded-2 m-0 ">
+                    Desktop App
+                  </h6>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- كرر نفس الكود في باقي الكاردات مع تغيير الفئات حسب الحاجة -->
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="game-details-1"
+      class="game-content gameDetails flex-column fixed-top pt-4 overflow-auto"
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="titleDetails">Game Details</h1>
+        <a href="#" class="close-button">
+          <i class="fa-solid fa-remove fa-xl text-secondary"></i>
+        </a>
+      </div>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <img
+                id="game-thumbnail"
+                src="img/thumbnail1.jpg"
+                class="w-100 rounded-3"
+              />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="">
+              <h2 id="game-title" class="mb-4">
+                Title: Lorem ipsum dolor sit.
+              </h2>
+              <h5 id="game-category" class="mb-4">
+                Category:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-platform" class="mb-4">
+                Platform:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-status" class="mb-4">
+                Status:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <p id="game-description" class="mb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+                dolor fuga impedit consequuntur reiciendis accusantium sit sunt
+                laudantium eum voluptatibus?
+              </p>
+              <a
+                id="game-link"
+                class="btn btn-effect  fw-semibold"
+                >Show Game</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="game-details-2"
+      class="game-content gameDetails flex-column fixed-top pt-4 overflow-auto"
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="titleDetails">Game Details</h1>
+        <a href="#" class="close-button">
+          <i class="fa-solid fa-remove fa-xl text-secondary"></i>
+        </a>
+      </div>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <img
+                id="game-thumbnail"
+                src="img/thumbnail2.jpg"
+                class="w-100 rounded-3"
+              />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="">
+              <h2 id="game-title" class="mb-4">
+                Title: Lorem ipsum dolor sit.
+              </h2>
+              <h5 id="game-category" class="mb-4">
+                Category:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-platform" class="mb-4">
+                Platform:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-status" class="mb-4">
+                Status:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <p id="game-description" class="mb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+                dolor fuga impedit consequuntur reiciendis accusantium sit sunt
+                laudantium eum voluptatibus?
+              </p>
+              <a
+                id="game-link"
+                class="btn btn-effect  fw-semibold"
+                >Show Game</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="game-details-3"
+      class="game-content gameDetails flex-column fixed-top pt-4 overflow-auto"
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="titleDetails">Game Details</h1>
+        <a href="#" class="close-button">
+          <i class="fa-solid fa-remove fa-xl text-secondary"></i>
+        </a>
+      </div>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <img
+                id="game-thumbnail"
+                src="img/thumbnail3.jpg"
+                class="w-100 rounded-3"
+              />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="">
+              <h2 id="game-title" class="mb-4">
+                Title: Lorem ipsum dolor sit.
+              </h2>
+              <h5 id="game-category" class="mb-4">
+                Category:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-platform" class="mb-4">
+                Platform:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-status" class="mb-4">
+                Status:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <p id="game-description" class="mb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+                dolor fuga impedit consequuntur reiciendis accusantium sit sunt
+                laudantium eum voluptatibus?
+              </p>
+              <a
+                id="game-link"
+                class="btn btn-effect  fw-semibold"
+                >Show Game</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="game-details-4"
+      class="game-content gameDetails flex-column fixed-top pt-4 overflow-auto"
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="titleDetails">Game Details</h1>
+        <a href="#" class="close-button">
+          <i class="fa-solid fa-remove fa-xl text-secondary"></i>
+        </a>
+      </div>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <img
+                id="game-thumbnail"
+                src="img/thumbnail4.jpg"
+                class="w-100 rounded-3"
+              />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="">
+              <h2 id="game-title" class="mb-4">
+                Title: Lorem ipsum dolor sit.
+              </h2>
+              <h5 id="game-category" class="mb-4">
+                Category:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-platform" class="mb-4">
+                Platform:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <h5 id="game-status" class="mb-4">
+                Status:
+                <span class="bg-info px-2 py-1 rounded-3 text-black fw-bold"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
+              </h5>
+              <p id="game-description" class="mb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+                dolor fuga impedit consequuntur reiciendis accusantium sit sunt
+                laudantium eum voluptatibus?
+              </p>
+              <a
+                id="game-link"
+                class="btn btn-effect  fw-semibold"
+                >Show Game</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="loading" class="d-none fixed-top"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

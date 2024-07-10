@@ -1,0 +1,301 @@
+:root {
+  --main-transition: all 0.8s;
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@font-face {
+  font-family: "Rubik", sans-serif;
+  src: url(../webfonts/Salsa-Regular.ttf);
+}
+* {
+  font-family: "Rubik", sans-serif;
+}
+[data-theme="dark"] {
+  --border-color: #e2e2e2;
+  --main-color: #272b30;
+  --seconde-color: #32383e;
+  --color-text: #fff;
+  --btn-main-color: #272729;
+  --navbar: rgb(13, 40, 61);
+}
+
+[data-theme="light"] {
+  --border-color: #242424;
+  --main-color: #eeeeee;
+  --seconde-color: #909396;
+  --color-text: #000;
+  --btn-main-color: #414550;
+  --navbar: rgb(208, 208, 208);
+}
+
+.main-btn {
+  background-color: var(--btn-main-color);
+  color: var(--color-text);
+}
+
+.main-btn:hover {
+  background: linear-gradient(rgb(0 0 0 / 0.1), rgb(0 0 0 / 0.2));
+}
+.badge-color {
+  background-color: var(--seconde-color);
+}
+
+* {
+  transition: background-color 0.5s, color 0.2s;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: var(--main-color);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  color: var(--color-text) !important;
+}
+
+a,
+p,
+span {
+  color: inherit !important;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.nav-bg {
+  background-color: var(--main-color);
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--seconde-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+.mainBg .card {
+  transition: transform 0.5s;
+}
+
+.mainBg .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.gameDetails {
+  background-color: #272729be;
+
+  backdrop-filter: blur(4px);
+}
+.mainBg {
+  background-color: var(--main-color);
+}
+.color-text {
+  color: var(--color-text);
+}
+nav {
+  background-color: var(--navbar);
+}
+
+.nav-link {
+  color: var(--color-text);
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(0, 187, 255);
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(0, 187, 255);
+}
+
+.offer .card h6 {
+  font-size: 14px;
+}
+.survey .card h6 {
+  font-size: 14px;
+}
+.status .card h6 {
+  font-size: 14px;
+}
+.card {
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.card img {
+  opacity: 1;
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+}
+
+.card .card-body {
+  height: 120px;
+  max-height: 120px;
+  padding: 16px 0px !important;
+}
+
+.card .card-title {
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.gameDetails {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-color);
+}
+
+.gameDetails span {
+  font-size: 12px;
+}
+
+.gameDetails .fa-remove {
+  cursor: pointer;
+}
+
+#loading {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url("../img/loading.gif");
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 9999;
+}
+.navbar-toggler {
+  border-color: var(--color-text) !important;
+  color: var(--color-text) !important;
+}
+
+.gameDetails {
+  display: none;
+}
+
+.gameDetails:target {
+  display: flex;
+}
+
+.close-button:target {
+  display: none;
+}
+.gameDetails {
+  display: none;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.close-button:target {
+  display: none;
+}
+.col-lg-3 a {
+  text-decoration: none !important;
+}
+.table th,
+.table td {
+  color: var(--color-text);
+  background-color: var(--main-color);
+}
+.sale {
+  color: var(--color-text) !important;
+  background-color: var(--navbar);
+}
+.description {
+  color: var(--color-text) !important;
+}
+.rating {
+  color: var(--color-text) !important;
+  background-color: var(--seconde-color) !important;
+  padding: 4px 6px !important;
+}
+.card {
+  border: var(--border-color) 2px solid !important;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 25px !important;
+  border: 1px var(--border-color) solid !important;
+  font-size: 1.4rem;
+  border-radius: 0.25rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.btn-effect {
+  overflow: hidden;
+}
+
+.btn-effect::before,
+.btn-effect::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--seconde-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  z-index: -1;
+  transition: top 0.5s ease-in-out;
+}
+.btn-effect::after {
+  top: 100%;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+.btn-effect:hover {
+  color: var(--color-text);
+}
+.btn-effect:hover::before {
+  top: 0;
+}
+.btn-effect:hover::after {
+  top: 50%;
+}
+.rate {
+  color: var(--border-color);
+}
